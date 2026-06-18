@@ -175,3 +175,30 @@ body {
   align-items: stretch;
   justify-content: space-between;
 }
+
+.derecha {
+  flex-basis: 33.33%;
+  background-color: #ffffff;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  
+  
+}
+
+.num {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.etiqet {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: 0.4rem;
+}
+
+.estat {
+  border-right: 0.1rem solid #e0ddd5;
+}
+
+.lastestat{}
