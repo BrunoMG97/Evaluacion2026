@@ -201,4 +201,279 @@ body {
   border-right: 0.1rem solid #e0ddd5;
 }
 
-.lastestat{}
+/*===Seccion Menu===*/
+
+
+.seccion-menu {
+  background-color: #ffffff;
+}
+
+.seccion-menu .seccion-interior {
+  padding: 4.8rem 3.2rem;
+}
+
+.seccion-header {
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+
+.seccion-tag {
+  display: block;
+  color:#c0392b;
+  font-size: 1rem;
+  margin-bottom: 0,6rem;
+}
+
+.seccion-header h2 {
+  font-size: 2,2rem;
+  font-weight: bold;
+}
+
+.ver-todos {
+  color:#555555;
+  font-size: 2.5rem;
+  border-bottom: 0.1rem solid #e0ddd5;
+  padding-bottom: 0.2rem;
+}
+
+.fila.carta {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.carta {
+  flex-basis: 25%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  overflow:hidden;
+  margin-right: 2rem;
+}
+
+.info-carta {
+  padding: 1,2rem
+}
+
+.carta:last-child {
+  margin-right: 0;
+}
+
+.cata img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carta-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.carta-info p {
+  font-size: 1,1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.footer-carta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.precio {
+  color: #c0392b;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.btn-add {
+  background-color:#1a1a1a;
+  color:#ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+  line-height: 1;
+}
+
+/*===Seccion Mas vendidos===*/
+
+.seccion-favoritos {
+  background-color: #f2f0eb;
+  border-top: 0.1 solid #e0ddd5;
+  border-bottom: #e0ddd5;
+}
+
+.seccion-favoritos .seccion-interior {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4.8rem 3.2rem;
+}
+
+.favoritos-col-izq {
+  flex-basis: 28rem;
+  flex-shrink: 0;
+  margin-right: 4.8rem;
+}
+
+.favoritos-col-izq .tag-seccion {
+  margin-bottom: 0.6rem;
+}
+
+.favoritos-col-izq h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.favoritos-col-izq p {
+  font-size: 1.2rem;
+  color:#555555;
+  line-height: 1.7;
+}
+
+.faviritos-col-der{
+  flex: 1;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1,2rem;
+  border-bottom:0.1rem solid #e0ddd5
+}
+
+.fav-item:last-child {
+  border-bottom: none;
+}
+
+.fav-item img {
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: 0.8rem;
+  margin-right: 1.4rem;
+  flex-shrink: 0;
+}
+
+.fav-info {
+  display: flex;
+  flex-direction: column
+}
+
+.fav-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fav-desc {
+  font-size: 1,1rem;
+  color:#555555;
+  margin-top: 0.2rem;
+}
+
+.fav-meta {
+  margin-left: auto;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.fav-price {
+  display: block;
+  color: #c0392b;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.fav-count {
+  display: block;
+  font-size: 1rem;
+  color: #555555;
+  margin-top: 0.2rem;
+}
+
+/*===Seccion Nosotros===*/
+
+.contenedorsobrenos {
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedorizq {
+  flex-basis: 45%;
+  
+}
+
+.historia {
+  color:#c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.snos {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.parrafos {
+  font-size: 1.3rem;
+  color: #555555;
+  margin-bottom: 1.2rem;
+}
+
+.contenedorder {
+  flex-basis: 45%;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.derecha {
+  flex-basis: 33.33%;
+  background-color: #ffffff;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  
+  
+}
+
+.num {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.etiqet {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: 0.4rem;
+}
+
+.estat {
+  border-right: 0.1rem solid #e0ddd5;
+}
+
+
+/*===Seccion Contacto===*/
+
+.contact-seccio{}
+
