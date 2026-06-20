@@ -95,7 +95,7 @@
 
           <article class="carta">
             <img src="../tawenosushi/img/sushi4.jpg" alt="Sashimi Mix">
-            <div class="info-carta"></div>
+            <div class="info-carta">
               <h3>Sashimi Mix</h3>
               <p>12 piezas premium variadas.</p>
               <div class="footer-carta">
@@ -103,7 +103,7 @@
                 <button type="btn-add">+</button>
               </div>
             </div>
-          </article>  
+          </article>
         </div>
       </div> 
     </section>
@@ -201,28 +201,29 @@
 
 
     <!-- ===================== INICIO CONTACTO ===================== -->
+    <section class="seccion-contacto">
+      <span>Escríbenos</span>
+      <h2>Contáctanos</h2>
+      <p>Reservas, consultas o simplemente salúdanos. Respondemos en menos de 24 horas.</p>
+      <ul>
+        <li>Teléfono: +56 9 1234 5678</li>
+        <li>Correo: <a href="mailto:hola@tawenosushi.cl">hola@tawenosushi.cl</a></li>
+        <li>Horario: Mar–Dom 12:00–22:00</li>
+      </ul>
 
-    <span>Escríbenos</span>
-    <h2>Contáctanos</h2>
-    <p>Reservas, consultas o simplemente salúdanos. Respondemos en menos de 24 horas.</p>
-    <ul>
-      <li>Teléfono: +56 9 1234 5678</li>
-      <li>Correo: <a href="mailto:hola@tawenosushi.cl">hola@tawenosushi.cl</a></li>
-      <li>Horario: Mar–Dom 12:00–22:00</li>
-    </ul>
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-    <form action="#" method="post">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-
-      <button type="submit">Enviar mensaje</button>
-    </form>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
   </main>
   <!-- ===================== FIN CONTACTO ===================== -->
 

@@ -223,11 +223,11 @@ body {
   display: block;
   color:#c0392b;
   font-size: 1rem;
-  margin-bottom: 0,6rem;
+  margin-bottom: 0.6rem;
 }
 
 .seccion-header h2 {
-  font-size: 2,2rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -238,7 +238,7 @@ body {
   padding-bottom: 0.2rem;
 }
 
-.fila.carta {
+.fila-carta {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -254,27 +254,27 @@ body {
 }
 
 .info-carta {
-  padding: 1,2rem
+  padding: 1.2rem;
 }
 
 .carta:last-child {
   margin-right: 0;
 }
 
-.cata img {
+.carta img {
   height: 20rem;
   width: 100%;
   object-fit: cover;
 }
 
-.carta-info h3 {
+.info-carta h3 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-.carta-info p {
-  font-size: 1,1rem;
+.info-carta p {
+  font-size: 1.1rem;
   color: #555555;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -312,8 +312,8 @@ body {
 
 .seccion-favoritos {
   background-color: #f2f0eb;
-  border-top: 0.1 solid #e0ddd5;
-  border-bottom: #e0ddd5;
+  border-top: 0.1rem solid #e0ddd5;
+  border-bottom: 0.1rem solid #e0ddd5;
 }
 
 .seccion-favoritos .seccion-interior {
@@ -345,7 +345,7 @@ body {
   line-height: 1.7;
 }
 
-.faviritos-col-der{
+.favoritos-col-der {
   flex: 1;
 }
 
@@ -353,8 +353,8 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1.2rem;
-  padding-bottom: 1,2rem;
-  border-bottom:0.1rem solid #e0ddd5
+  padding-bottom: 1.2rem;
+  border-bottom:0.1rem solid #e0ddd5;
 }
 
 .fav-item:last-child {
@@ -364,14 +364,15 @@ body {
 .fav-item img {
   width: 5.2rem;
   height: 5.2rem;
-  object-fit: 0.8rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
   margin-right: 1.4rem;
   flex-shrink: 0;
 }
 
 .fav-info {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .fav-name {
@@ -380,7 +381,7 @@ body {
 }
 
 .fav-desc {
-  font-size: 1,1rem;
+  font-size: 1.1rem;
   color:#555555;
   margin-top: 0.2rem;
 }
@@ -405,75 +406,90 @@ body {
   margin-top: 0.2rem;
 }
 
-/*===Seccion Nosotros===*/
+/*===Seccion Contacto===*/
 
-.contenedorsobrenos {
-  background-color: #ffffff;
+.seccion-contacto {
+  background-color: #f9f8f5;
   padding: 4.8rem 3.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-top: 0.1rem solid #e0ddd5;
 }
 
-.contenedorizq {
-  flex-basis: 45%;
-  
-}
-
-.historia {
-  color:#c0392b;
+.seccion-contacto span:first-child {
+  display: block;
+  color: #c0392b;
   font-size: 1rem;
   margin-bottom: 0.6rem;
 }
 
-.snos {
+.seccion-contacto h2 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 1.6rem;
 }
 
-.parrafos {
+.seccion-contacto > p {
   font-size: 1.3rem;
   color: #555555;
-  margin-bottom: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2.4rem;
 }
 
-.contenedorder {
-  flex-basis: 45%;
-  border: 0.1rem solid #e0ddd5;
-  border-radius: 1rem;
+.seccion-contacto ul {
+  margin-bottom: 2.4rem;
+}
+
+.seccion-contacto ul li {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 0.8rem;
+}
+
+.seccion-contacto ul li a {
+  color: #c0392b;
+}
+
+.seccion-contacto form {
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.derecha {
-  flex-basis: 33.33%;
-  background-color: #ffffff;
-  padding: 2rem 1.6rem;
-  text-align: center;
-  
-  
-}
-
-.num {
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #1a1a1a;
-}
-
-.etiqet {
+.seccion-contacto label {
   font-size: 1.1rem;
   color: #555555;
-  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
-.estat {
-  border-right: 0.1rem solid #e0ddd5;
+.seccion-contacto input,
+.seccion-contacto textarea {
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.seccion-contacto input:focus,
+.seccion-contacto textarea:focus {
+  outline: none;
+  border-color: #c0392b;
+}
+
+.seccion-contacto textarea {
+  resize: vertical;
+}
+
+.seccion-contacto button {
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
 }
 
 
-/*===Seccion Contacto===*/
-
-.contact-seccio{}
 
